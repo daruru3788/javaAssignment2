@@ -32,6 +32,21 @@ public class Mission {
         return description;
     }
 
+    /** 목표 이름 반환 */
+    public String getTargetName() {
+        return targetName;
+    }
+
+    /** 현재 진행도 반환 */
+    public int getProgress() {
+        return progress;
+    }
+
+    /** 필요 처치 수 반환 */
+    public int getTargetCount() {
+        return targetCount;
+    }
+
     /** 몬스터 처치 기록 */
     public void recordKill(String monsterName) {
         if (rewardGiven) return;
