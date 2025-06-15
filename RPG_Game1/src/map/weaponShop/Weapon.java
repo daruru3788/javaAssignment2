@@ -14,12 +14,28 @@ public class Weapon {
 	}
 
 	public void equip(Character user, Weapon weapon) {
-		if (user.weapon != null) {
-			user.power -= user.weapon.power;
-			user.spAttack -= user.weapon.spAttack;
-		}
-		user.power += weapon.power;
-		user.spAttack += weapon.spAttack;
-		user.weapon = weapon;
+			if (user.weapon != null) {
+					user.power -= user.weapon.power;
+					user.spAttack -= user.weapon.spAttack;
+			}
+			user.power += weapon.power;
+			user.spAttack += weapon.spAttack;
+			user.weapon = weapon;
+	}
+
+	public int getPrice() {
+			return price;
+	}
+
+	public String getName() {
+			return name;
+	}
+
+	public int getPower() {
+			return power;
+	}
+
+	public int getSpAttack() {
+			return spAttack;
 	}
 }
