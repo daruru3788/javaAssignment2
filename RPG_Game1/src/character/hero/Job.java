@@ -10,6 +10,10 @@ public abstract class Job {
 	private int baseHp, baseMp, basePower, baseDefense, baseSpAttack;
 	protected List<Skill> skills = new ArrayList<>();
 
+	public void addSkill(Skill skill) {
+		skills.add(skill);
+	}
+
 	public Job(String jobName, int baseHp, int baseMp, int basePower, int baseDefense, int baseSpAttack) {
 		this.jobName = jobName;
 		this.baseHp = baseHp;
